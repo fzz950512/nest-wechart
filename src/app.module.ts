@@ -16,10 +16,10 @@ import { ConfigModule } from '@nestjs/config';
     CatModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3306,
+      host: 'gz-cynosdbmysql-grp-m2qxnxu9.sql.tencentcdb.com',
+      port: 21351,
       username: 'root',
-      password: 'fzz950512',
+      password: 'fzz.950512',
       database: 'test',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,// 这个选项在生产环境中应该关闭，因为它会根据实体自动同步数据库结构
